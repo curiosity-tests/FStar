@@ -18,11 +18,6 @@ jobs:
     with:
       ref: ${{ inputs.ref || '' }}
 
-  macos:
-    uses: ./.github/workflows/build-macos.yml
-    with:
-      ref: ${{ inputs.ref || '' }}
-
   windows:
     uses: ./.github/workflows/build-windows.yml
     with:
